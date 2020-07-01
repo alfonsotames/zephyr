@@ -31,8 +31,8 @@ struct ili9340_data {
 #endif
 };
 
-#define ILI9340_CMD_DATA_PIN_COMMAND 1
-#define ILI9340_CMD_DATA_PIN_DATA 0
+#define ILI9340_CMD_DATA_PIN_COMMAND 0
+#define ILI9340_CMD_DATA_PIN_DATA 1
 
 /* The number of bytes taken by a RGB pixel */
 #ifdef CONFIG_ILI9340_RGB565

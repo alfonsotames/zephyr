@@ -8,12 +8,17 @@ zephyr_sources_ifdef(CONFIG_SDL_DISPLAY		display_sdl.c)
 zephyr_sources_ifdef(CONFIG_DUMMY_DISPLAY	display_dummy.c)
 zephyr_sources_ifdef(CONFIG_FRAMEBUF_DISPLAY	display_framebuf.c)
 zephyr_sources_ifdef(CONFIG_ILI9340		display_ili9340.c)
+zephyr_sources_ifdef(CONFIG_ILI9163             display_ili9163.c)
 zephyr_sources_ifdef(CONFIG_ST7789V		display_st7789v.c)
 zephyr_sources_ifdef(CONFIG_GD7965		gd7965.c)
 
 zephyr_sources_ifdef(CONFIG_MICROBIT_DISPLAY
 	mb_display.c
 	mb_font.c
+)
+
+zephyr_sources_ifdef(ILI9163_NHD_1_8_128160EF
+	display_ili9163_NHD_1_8_128160EF.c
 )
 zephyr_sources_ifdef(CONFIG_ILI9340_LCD_ADAFRUIT_1480
 	display_ili9340_adafruit_1480.c
