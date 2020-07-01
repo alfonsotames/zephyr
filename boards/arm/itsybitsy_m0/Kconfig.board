@@ -1,0 +1,8 @@
+# SAM D21 Itsy Bitsy M0 configuration
+
+# Copyright (c) 2018 Bryan O'Donoghue
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ITSYBITSY_M0
+	bool "Itsy Bitsy M0"
+	depends on SOC_PART_NUMBER_SAMD21G18A
