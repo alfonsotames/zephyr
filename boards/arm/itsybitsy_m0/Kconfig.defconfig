@@ -1,0 +1,8 @@
+# SAM D21 Itsy Bitsy M0 configuration
+
+# Copyright (c) 2018 Bryan O'Donoghue
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD
+	default "itsybitsy_M0"
+	depends on BOARD_ITSYBITSY_M0
